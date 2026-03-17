@@ -7,7 +7,7 @@ const scoringPillars = [
         score: 29,
         maxScore: 30,
         details: [
-            { label: 'Production systems', value: 'Unison (unified communications), STQ (white-label quoting), Add to Action (lead qualification), Zorli (consumer mobile app — App Store/Google Play), AI Solution Architect suite, Scout training infrastructure, lead generation engine' },
+            { label: 'Production systems', value: 'Unison (unified communications), STQ (white-label quoting), Ad2Action (lead qualification), Zorli (consumer mobile app — App Store/Google Play), AI Solution Architect suite, Scout training infrastructure, lead generation engine' },
             { label: 'Zorli architecture', value: 'Consumer mobile application with AWS S3 backend, encryption at rest and in transit, AI-powered semantic retrieval for personal information management' },
             { label: 'Led development teams', value: 'Guided architecture and scoping for Zorli development in Replit' },
             { label: 'Complexity demonstrated', value: 'Multi-channel orchestration, mobile app distribution, cloud infrastructure (AWS), security architecture, semantic search, real-time voice AI, multi-tenant SaaS' },
@@ -19,9 +19,9 @@ const scoringPillars = [
         score: 25,
         maxScore: 25,
         details: [
-            { label: 'Live revenue-generating systems', value: 'Unison (unified communications, January 2025), Add to Action for Kat Fabricators (live several months)' },
+            { label: 'Live revenue-generating systems', value: 'Unison (unified communications, January 2025), Ad2Action for Kat Fabricators (live several months)' },
             { label: 'Consumer product', value: 'Zorli launching to public app stores (App Store + Google Play)' },
-            { label: 'Add to Action', value: 'Multi-channel lead qualification system (outbound SMS + inbound voice AI agent)' },
+            { label: 'Ad2Action', value: 'Multi-channel lead qualification system (outbound SMS + inbound voice AI agent)' },
             { label: 'Standardized deployment process', value: 'SOPs for scout intake → ops team handoff workflow' },
         ],
     },

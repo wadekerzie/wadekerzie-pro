@@ -31,7 +31,7 @@ const projects = [
         linkLabel: 'View Kerzie AI',
     },
     {
-        title: 'Add to Action',
+        title: 'Ad2Action',
         tag: 'Live',
         tagColor: 'bg-blue-100 text-blue-800',
         description: 'Multi-channel lead qualification system combining outbound SMS campaigns with an inbound voice AI agent for automated lead scoring and routing.',
