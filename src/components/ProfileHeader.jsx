@@ -1,0 +1,37 @@
+import CompetencyBadge from './CompetencyBadge'
+
+export default function ProfileHeader({ bio, showBadge = true, name, image }) {
+    return (
+        <header className="text-center mb-10">
+            {/* Profile Headshot */}
+            <img
+                src={image || "/headshot.jpg"}
+                alt="Wade Kerzie"
+                className="w-28 h-28 mx-auto mb-6 rounded-full object-cover ring-4 ring-white shadow-lg"
+            />
+
+            {/* Name */}
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-3">
+                {name || 'Wade Kerzie'}
+            </h1>
+
+            {/* Bio */}
+            <p className="text-secondary text-lg leading-relaxed mb-2 max-w-md mx-auto">
+                {bio || <>AI Systems Architect & Operations Leader</>}
+            </p>
+            {!bio && (
+                <p className="text-secondary/70 text-sm leading-relaxed mb-6 max-w-md mx-auto">
+                    Production AI deployments. $380M+ career revenue.<br />30 years building and closing.
+                </p>
+            )}
+            {bio && <div className="mb-6" />}
+
+            {/* Competency Badge */}
+            {showBadge && (
+                <div className="flex justify-center">
+                    <CompetencyBadge />
+                </div>
+            )}
+        </header>
+    )
+}
