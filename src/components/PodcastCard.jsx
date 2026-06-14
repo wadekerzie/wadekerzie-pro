@@ -22,7 +22,7 @@ export default function PodcastCard() {
             <div className="flex gap-1.5 shrink-0">
                 {/* Spotify */}
                 <a
-                    href="#spotify"
+                    href="https://open.spotify.com/show/7KDKge7ZtmkdIfxsby7wu1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 flex items-center justify-center bg-[#1DB954] hover:bg-[#1ed760] text-white rounded-full transition-all duration-200 hover:scale-110"
