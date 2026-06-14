@@ -1,22 +1,20 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import LinkCard from './LinkCard'
 import PodcastCard from './PodcastCard'
 import CalendarModal from './CalendarModal'
 
 const currentlyItems = [
     {
-        icon: '🟣',
-        label: 'Installing NVIDIA NemoClaw AI agent platform for construction & logistics',
-        link: 'https://kerzie.ai/nemoclaw',
+        icon: '🏢',
+        label: 'Founder, Kerzie AI Solutions. Building AI-native products.',
     },
     {
-        icon: '🔍',
-        label: 'Available for fractional AI leadership and contract engagements',
+        icon: '📍',
+        label: 'GotaGuy live in McKinney/Dallas and Aurora/Denver.',
     },
     {
-        icon: '🎓',
-        label: 'Delivering AI training workshops for enterprise teams',
+        icon: '🚀',
+        label: 'Shipping. Not teaching.',
     },
 ]
 
@@ -24,16 +22,8 @@ const links = [
     {
         emoji: '🤖',
         title: 'Kerzie AI Solutions',
-        description: 'AI automation platforms and NemoClaw installs.',
+        description: 'SMS-native home repair, lead response, and mobile apps.',
         href: 'https://kerzie.ai',
-        useKerzieIcon: true,
-        liveIndicator: 'NemoClaw Now Live',
-    },
-    {
-        emoji: '🎯',
-        title: 'Kerzie Consulting',
-        description: 'AI training, workshops, and app development.',
-        href: 'https://kerzieconsulting.com',
         useKerzieIcon: true,
     },
     {
@@ -58,10 +48,10 @@ export default function LinkHub() {
         <>
             {/* Currently Working On */}
             <section className="max-w-md mx-auto mb-8">
-                <h2 className="text-xs font-bold text-secondary/60 uppercase tracking-widest mb-3 text-center">
+                <h2 className="text-xs font-semibold text-[#6B9FD4] uppercase tracking-widest mb-3 text-center">
                     Currently
                 </h2>
-                <div className="bg-white/80 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-card space-y-2.5">
+                <div className="bg-[#1E2035] border border-border rounded-2xl p-4 shadow-card space-y-2.5">
                     {currentlyItems.map((item, i) => (
                         <div key={i} className="flex items-start gap-2.5">
                             <span className="text-sm shrink-0 mt-0.5">{item.icon}</span>
@@ -70,72 +60,20 @@ export default function LinkHub() {
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-xs text-secondary leading-relaxed hover:text-accent transition-colors"
+                                    className="text-xs text-[#AABBCC] leading-relaxed hover:text-accent transition-colors"
                                 >
                                     {item.label}
                                 </a>
                             ) : (
-                                <span className="text-xs text-secondary leading-relaxed">{item.label}</span>
+                                <span className="text-xs text-[#AABBCC] leading-relaxed">{item.label}</span>
                             )}
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* Navigation Cards */}
+            {/* Link Cards */}
             <nav className="space-y-3 mb-8" aria-label="Main navigation">
-                {/* What I've Built — links to /work */}
-                <Link
-                    to="/work"
-                    className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-accent/20 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5"
-                >
-                    <span className="w-10 h-10 flex items-center justify-center text-2xl shrink-0" role="img" aria-hidden="true">
-                        🛠
-                    </span>
-                    <div className="flex-grow min-w-0">
-                        <h2 className="font-medium text-sm text-primary group-hover:text-accent transition-colors truncate">
-                            What I've Built
-                        </h2>
-                        <p className="text-xs text-secondary truncate">
-                            Production systems, AI deployments, and training programs.
-                        </p>
-                    </div>
-                    <svg
-                        className="w-4 h-4 text-secondary group-hover:text-accent group-hover:translate-x-0.5 transition-all shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                </Link>
-
-                {/* Career — links to /career */}
-                <Link
-                    to="/career"
-                    className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5"
-                >
-                    <span className="w-10 h-10 flex items-center justify-center text-2xl shrink-0" role="img" aria-hidden="true">
-                        💼
-                    </span>
-                    <div className="flex-grow min-w-0">
-                        <h2 className="font-medium text-sm text-primary group-hover:text-accent transition-colors truncate">
-                            Career History
-                        </h2>
-                        <p className="text-xs text-secondary truncate">
-                            Telecom to AI. Enterprise sales to systems architecture.
-                        </p>
-                    </div>
-                    <svg
-                        className="w-4 h-4 text-secondary group-hover:text-accent group-hover:translate-x-0.5 transition-all shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                </Link>
-
                 {links.map((link) => (
                     <LinkCard key={link.title} {...link} />
                 ))}
@@ -148,21 +86,21 @@ export default function LinkHub() {
                 {/* Let's Connect */}
                 <button
                     onClick={() => setIsCalendarOpen(true)}
-                    className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5 text-left"
+                    className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-[#1E2035] border border-border hover:border-[#6B9FD4] shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5 text-left"
                 >
                     <span className="w-10 h-10 flex items-center justify-center text-2xl shrink-0" role="img" aria-hidden="true">
                         📅
                     </span>
                     <div className="flex-grow min-w-0">
-                        <h2 className="font-medium text-sm text-primary group-hover:text-accent transition-colors truncate">
+                        <h2 className="font-medium text-sm text-white group-hover:text-[#6B9FD4] transition-colors truncate">
                             Let's Connect
                         </h2>
-                        <p className="text-xs text-secondary truncate">
+                        <p className="text-xs text-[#AABBCC] truncate">
                             Schedule a call with me.
                         </p>
                     </div>
                     <svg
-                        className="w-4 h-4 text-secondary group-hover:text-accent group-hover:translate-x-0.5 transition-all shrink-0"
+                        className="w-4 h-4 text-[#6B9FD4] group-hover:translate-x-0.5 transition-all shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

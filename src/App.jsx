@@ -2,8 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import ProfileHeader from './components/ProfileHeader'
 import LinkHub from './components/LinkHub'
 import SocialFooter from './components/SocialFooter'
-import Work from './pages/Work'
-import Career from './pages/Career'
 
 function HomePage() {
     return (
@@ -21,8 +19,6 @@ function App() {
             <div className="max-w-hub mx-auto">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/work" element={<Work />} />
-                    <Route path="/career" element={<Career />} />
                 </Routes>
             </div>
         </div>
