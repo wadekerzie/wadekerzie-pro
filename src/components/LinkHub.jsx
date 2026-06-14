@@ -27,17 +27,17 @@ const links = [
         useKerzieIcon: true,
     },
     {
+        emoji: '📧',
+        title: 'Newsletter',
+        description: 'Weekly insights on AI, operations, and building.',
+        href: 'https://wades-newsletter-9cf259.beehiiv.com/',
+    },
+    {
         emoji: '⛳',
         title: 'PuttingIsSimple',
         description: 'Online video course — improve your putting, lower your scores.',
         href: 'https://puttingissimple.com',
         useGolfIcon: true,
-    },
-    {
-        emoji: '📧',
-        title: 'Newsletter',
-        description: 'Weekly insights on AI, operations, and building.',
-        href: 'https://wades-newsletter-9cf259.beehiiv.com/',
     },
 ]
 
@@ -74,14 +74,16 @@ export default function LinkHub() {
 
             {/* Link Cards */}
             <nav className="space-y-3 mb-8" aria-label="Main navigation">
-                {links.map((link) => (
-                    <LinkCard key={link.title} {...link} />
-                ))}
+                <LinkCard key={links[0].title} {...links[0]} />
 
                 {/* Podcast Card */}
                 <div className="py-1">
                     <PodcastCard />
                 </div>
+
+                {links.slice(1).map((link) => (
+                    <LinkCard key={link.title} {...link} />
+                ))}
 
                 {/* Let's Connect */}
                 <button
