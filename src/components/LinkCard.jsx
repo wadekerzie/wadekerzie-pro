@@ -24,9 +24,9 @@ export default function LinkCard({ emoji, title, description, href, primary = fa
                 />
             ) : useGolfIcon ? (
                 <img
-                    src="/golf-icon.png"
+                    src="/putting-is-simple-icon.png"
                     alt=""
-                    className="w-10 h-10 shrink-0 rounded-lg object-cover"
+                    className="w-10 h-10 shrink-0 rounded-lg object-contain"
                 />
             ) : (
                 <span className="w-10 h-10 flex items-center justify-center text-2xl shrink-0" role="img" aria-hidden="true">
