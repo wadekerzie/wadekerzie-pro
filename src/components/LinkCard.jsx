@@ -1,3 +1,4 @@
+// updated
 export default function LinkCard({ emoji, title, description, href, primary = false, useKerzieIcon = false, useGolfIcon = false, liveIndicator = null }) {
     const isExternal = href.startsWith('http')
 
@@ -23,7 +24,7 @@ export default function LinkCard({ emoji, title, description, href, primary = fa
                 />
             ) : useGolfIcon ? (
                 <img
-                    src="/golf-icon.png"
+                    src="/putting-is-simple-icon.png"
                     alt=""
                     className="w-10 h-10 shrink-0 rounded-lg object-cover"
                 />
