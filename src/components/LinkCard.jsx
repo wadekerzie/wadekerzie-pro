@@ -1,4 +1,4 @@
-// updated
+// v2
 export default function LinkCard({ emoji, title, description, href, primary = false, useKerzieIcon = false, useGolfIcon = false, liveIndicator = null }) {
     const isExternal = href.startsWith('http')
 
