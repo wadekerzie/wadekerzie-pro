@@ -59,7 +59,7 @@ const links = [
     {
         emoji: '⛳',
         title: 'PuttingIsSimple',
-        description: 'Online video course — improve your putting, lower your scores.',
+        description: 'Online video course: improve your putting, lower your scores.',
         href: 'https://puttingissimple.com',
         useGolfIcon: true,
     },
