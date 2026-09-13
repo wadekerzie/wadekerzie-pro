@@ -8,18 +8,36 @@ export default function PodcastCard() {
                 className="w-10 h-10 shrink-0 rounded-lg object-cover shadow-sm"
             />
 
-            {/* Content */}
-            <div className="flex-grow min-w-0">
-                <h2 className="font-medium text-sm text-white truncate">
+            {/* Content — main click target */}
+            <a
+                href="https://www.youtube.com/@KerzieAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-grow min-w-0"
+            >
+                <h2 className="font-medium text-sm text-white group-hover:text-[#6B9FD4] transition-colors truncate">
                     AI in the Wild - Hosted by Wade Kerzie
                 </h2>
                 <p className="text-xs text-[#AABBCC] truncate">
-                    ✨ 50+ episodes, more coming soon
+                    New episodes on the Kerzie AI YouTube channel. 56-episode podcast archive.
                 </p>
-            </div>
+            </a>
 
             {/* Streaming Buttons */}
             <div className="flex gap-1.5 shrink-0">
+                {/* YouTube */}
+                <a
+                    href="https://www.youtube.com/@KerzieAI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 flex items-center justify-center bg-[#FF0000] hover:bg-[#e60000] text-white rounded-full transition-all duration-200 hover:scale-110"
+                    aria-label="Watch on YouTube"
+                >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </a>
+
                 {/* Spotify */}
                 <a
                     href="https://open.spotify.com/show/7KDKge7ZtmkdIfxsby7wu1"

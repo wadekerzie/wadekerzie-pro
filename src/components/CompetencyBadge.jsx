@@ -7,10 +7,10 @@ const scoringPillars = [
         score: 29,
         maxScore: 30,
         details: [
-            { label: 'Production systems', value: 'Unison (unified communications), STQ (white-label quoting), Ad2Action (lead qualification), Zorli (consumer mobile app — App Store/Google Play), AI Solution Architect suite, Scout training infrastructure, lead generation engine' },
-            { label: 'Zorli architecture', value: 'Consumer mobile application with AWS S3 backend, encryption at rest and in transit, AI-powered semantic retrieval for personal information management' },
-            { label: 'Led development teams', value: 'Guided architecture and scoping for Zorli development in Replit' },
-            { label: 'Complexity demonstrated', value: 'Multi-channel orchestration, mobile app distribution, cloud infrastructure (AWS), security architecture, semantic search, real-time voice AI, multi-tenant SaaS' },
+            { label: 'Production systems', value: 'GotaGuy (SMS-native home repair marketplace, live in McKinney TX and Aurora CO), The Back Cover (AI-search readiness with a daily production refresh of a dealer\'s 300-plus-vehicle inventory feed), Unison (omnichannel lead response), TrueSeat (AI interview to candidate dossier)' },
+            { label: 'Architecture', value: 'LLM orchestration, voice (STT/TTS) and SMS pipelines, Stripe checkout and contractor dispatch, Supabase and Postgres, Railway and Vercel, Meta Marketing API' },
+            { label: 'Operating system', value: 'Wade OS, an AI operating system of scheduled agents, shipping gates and receipts that carries the technical execution across every product' },
+            { label: 'Complexity demonstrated', value: 'Multi-channel orchestration, live payments, AI-search verification against the model providers\' own crawlers, hosted candidate dossiers with provenance tiers' },
         ],
     },
     {
@@ -19,10 +19,9 @@ const scoringPillars = [
         score: 25,
         maxScore: 25,
         details: [
-            { label: 'Live revenue-generating systems', value: 'Unison (unified communications, January 2025), Ad2Action for Kat Fabricators (live several months)' },
-            { label: 'Consumer product', value: 'Zorli launching to public app stores (App Store + Google Play)' },
-            { label: 'Ad2Action', value: 'Multi-channel lead qualification system (outbound SMS + inbound voice AI agent)' },
-            { label: 'Standardized deployment process', value: 'SOPs for scout intake → ops team handoff workflow' },
+            { label: 'Live client systems', value: 'The Back Cover for Shortline GMC (signed August 2026, daily refresh since August 31); Voice AI for Kat Fabricators (manufacturing) and Aim High Electrical (field services)' },
+            { label: 'Consumer and marketplace', value: 'GotaGuy live in two markets with live Stripe checkout and homeowner SMS; TrueSeat live at trueseat.io' },
+            { label: 'Verification discipline', value: 'The Shortline deployment is verified every morning and logged publicly at kerzie.ai/shortline-log' },
         ],
     },
     {
@@ -31,9 +30,9 @@ const scoringPillars = [
         score: 20,
         maxScore: 20,
         details: [
-            { label: 'Career revenue', value: '$380M+ in enterprise sales leadership' },
-            { label: 'Kerzie revenue model', value: '$2,500 setup + $1,000/month recurring (STQ), 20-50% commission structure (Scout program)' },
-            { label: 'ROI frameworks', value: 'Built-in proposal tools with quantified client value calculations' },
+            { label: 'Career revenue', value: '$420M+ in enterprise sales leadership; nine deals over $12M' },
+            { label: 'Kerzie revenue model', value: 'Productized offers: The Back Cover (setup plus a monthly Watch), AI Fast-Track Session, Implementation sprint; a referral-partner and seller motion for The Back Cover' },
+            { label: 'Published method', value: 'The Kerzie Effect (kerzie.ai/kerzie-effect)' },
         ],
     },
     {
@@ -43,6 +42,8 @@ const scoringPillars = [
         maxScore: 15,
         details: [
             { label: 'Verified deployment', value: 'Applied AI systems deployed in production across multiple verticals.' },
+            { label: 'Published', value: "Nation's Restaurant News, August 2026; essays The Kerzie Effect, The Consequence Clock and The Blast Door at kerzie.ai" },
+            { label: 'On camera', value: 'AI in the Wild, the show on the Kerzie AI YouTube channel; 56-episode podcast archive' },
         ],
     },
     {
@@ -51,10 +52,10 @@ const scoringPillars = [
         score: 9,
         maxScore: 10,
         details: [
-            { label: 'Cloud infrastructure', value: 'AWS S3, encryption at rest and in transit, secure storage architecture' },
-            { label: 'Development', value: 'Antigravity IDE, Replit, Git/GitHub, Vercel, mobile app deployment (App Store/Google Play)' },
-            { label: 'AI & Automation', value: 'GoHighLevel, Zapier (Silver Partner), Make, GPT-4, Claude, Anthropic API, semantic retrieval systems' },
-            { label: 'Platforms', value: 'Salesforce, HubSpot, voice/SMS orchestration, real-time AI agents, database architecture' },
+            { label: 'Cloud and infrastructure', value: 'Supabase, Postgres, Railway, Vercel, AWS S3' },
+            { label: 'Development', value: 'Claude Code, Git/GitHub, Vite/React, Next.js, mobile app deployment (App Store/Google Play)' },
+            { label: 'AI and automation', value: 'Claude API and Agent SDK, n8n, LangFlow, GoHighLevel, Zapier (Silver Partner), Make, HeyGen' },
+            { label: 'Platforms', value: 'Stripe, SMS orchestration, Meta Marketing API, Salesforce, HubSpot' },
             { label: 'Security', value: 'Encryption standards, secure data handling, authentication/authorization' },
         ],
     },

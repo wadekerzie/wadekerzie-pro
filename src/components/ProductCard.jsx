@@ -1,52 +1,35 @@
-const statusStyles = {
-    'Live': 'bg-green-100 text-green-800',
-    'Building': 'bg-amber-100 text-amber-800',
-    'Coming Soon': 'bg-slate-100 text-slate-600',
-    'Live/Building': 'bg-blue-100 text-blue-800',
-}
-
-export default function ProductCard({ title, description, status, href = '#', year }) {
+export default function ProductCard({ title, description, href }) {
     return (
-        <article className="group bg-white rounded-lg border border-border p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex flex-col">
-            <div className="flex items-start justify-between gap-4 mb-2">
-                <div className="flex items-center gap-3">
-                    {year && (
-                        <span className="text-xs font-medium text-secondary bg-background px-2 py-1 rounded">
-                            {year}
-                        </span>
-                    )}
-                    <h3 className="text-lg font-semibold text-primary group-hover:text-accent transition-colors">
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-[#1E2035] border border-border hover:border-[#6B9FD4] shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5"
+        >
+            {/* Content */}
+            <div className="flex-grow min-w-0">
+                <div className="flex items-center gap-2">
+                    <h3 className="font-medium text-sm text-white group-hover:text-[#6B9FD4] transition-colors truncate">
                         {title}
                     </h3>
+                    <span className="shrink-0 px-2 py-0.5 text-[10px] font-medium rounded-full bg-[#2D3154] text-[#AABBCC]">
+                        Live
+                    </span>
                 </div>
-                <span className={`shrink-0 px-2.5 py-1 text-xs font-medium rounded-full ${statusStyles[status] || statusStyles['Coming Soon']}`}>
-                    {status}
-                </span>
+                <p className="text-xs text-[#AABBCC] truncate">
+                    {description}
+                </p>
             </div>
-            <p className="text-secondary text-sm mb-6 flex-grow">
-                {description}
-            </p>
-            <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-accent hover:text-primary transition-colors"
+
+            {/* Arrow */}
+            <svg
+                className="w-4 h-4 text-[#6B9FD4] group-hover:translate-x-0.5 transition-all shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
             >
-                Learn more
-                <svg
-                    className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                    />
-                </svg>
-            </a>
-        </article>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+        </a>
     )
 }

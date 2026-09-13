@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import LinkCard from './LinkCard'
 import PodcastCard from './PodcastCard'
+import ProductCard from './ProductCard'
 import CalendarModal from './CalendarModal'
 
 const currentlyItems = [
     {
         icon: '🏢',
-        label: 'Founder, Kerzie AI Solutions. Building AI-native products.',
+        label: 'Founder, Kerzie AI Solutions. Four AI products in production, paying clients.',
     },
     {
-        icon: '📍',
-        label: 'GotaGuy live in McKinney/Dallas and Aurora/Denver.',
+        icon: '📰',
+        label: "Published in Nation's Restaurant News, August 2026.",
     },
     {
         icon: '🚀',
@@ -18,18 +19,41 @@ const currentlyItems = [
     },
 ]
 
+const productItems = [
+    {
+        title: 'GotaGuy',
+        description: 'Home repair by text. Live in McKinney, TX and Aurora, CO.',
+        href: 'https://gotaguy.chat',
+    },
+    {
+        title: 'The Back Cover',
+        description: 'AI-search readiness for local businesses. Live for a GMC dealer, refreshed daily.',
+        href: 'https://kerzie.ai/back-cover',
+    },
+    {
+        title: 'Unison',
+        description: 'Omnichannel lead response for small businesses.',
+        href: 'https://kerzie.ai/ventures/unison',
+    },
+    {
+        title: 'TrueSeat',
+        description: 'AI interview to candidate dossier, hosted at a URL.',
+        href: 'https://trueseat.io',
+    },
+]
+
 const links = [
     {
         emoji: '🤖',
         title: 'Kerzie AI Solutions',
-        description: 'SMS-native home repair, lead response, and mobile apps.',
+        description: 'Four AI products in production: GotaGuy, The Back Cover, Unison, TrueSeat.',
         href: 'https://kerzie.ai',
         useKerzieIcon: true,
     },
     {
         emoji: '📧',
         title: 'Newsletter',
-        description: 'Weekly insights on AI, operations, and building.',
+        description: 'Twice a week on AI, operations, and building. Tuesday and Thursday.',
         href: 'https://wades-newsletter-9cf259.beehiiv.com/',
     },
     {
@@ -72,6 +96,18 @@ export default function LinkHub() {
                 </div>
             </section>
 
+            {/* What I've Built */}
+            <section className="max-w-md mx-auto mb-8">
+                <h2 className="text-xs font-semibold text-[#6B9FD4] uppercase tracking-widest mb-3 text-center">
+                    What I've Built
+                </h2>
+                <div className="space-y-3">
+                    {productItems.map((product) => (
+                        <ProductCard key={product.title} {...product} />
+                    ))}
+                </div>
+            </section>
+
             {/* Link Cards */}
             <nav className="space-y-3 mb-8" aria-label="Main navigation">
                 <LinkCard key={links[0].title} {...links[0]} />
@@ -80,6 +116,14 @@ export default function LinkHub() {
                 <div className="py-1">
                     <PodcastCard />
                 </div>
+
+                {/* Published Thinking */}
+                <LinkCard
+                    emoji="📰"
+                    title="Published Thinking"
+                    description="Nation's Restaurant News byline, plus The Kerzie Effect, The Consequence Clock and The Blast Door at kerzie.ai."
+                    href="https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore"
+                />
 
                 {links.slice(1).map((link) => (
                     <LinkCard key={link.title} {...link} />
