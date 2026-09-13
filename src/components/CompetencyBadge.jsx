@@ -146,7 +146,7 @@ export default function CompetencyBadge() {
                         <div className="overflow-y-auto max-h-[calc(90vh-140px)] px-6 py-4">
                             {/* Description */}
                             <p className="text-secondary text-sm mb-6 leading-relaxed">
-                                The AACI measures verified implementation capability across five weighted pillars. This is not a self-assessment—it's based on documented systems, deployments, and revenue impact.
+                                The AACI measures verified implementation capability across five weighted pillars. This is not a self-assessment:it's based on documented systems, deployments, and revenue impact.
                             </p>
 
                             {/* Scoring Breakdown */}
