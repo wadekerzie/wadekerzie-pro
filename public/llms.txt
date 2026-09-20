@@ -1,6 +1,6 @@
 # Wade Kerzie
 
-> Founder of Kerzie AI Solutions, McKinney, Texas. 30+ years of enterprise sales leadership ($420M+ career revenue, nine deals over $12M), now building and selling AI products that are in production with paying clients. Published in Nation's Restaurant News. Applied AI Competency Index 98/100 (Verified Architect).
+> Founder of Kerzie AI Solutions, McKinney, Texas. 30+ years of enterprise sales leadership ($420M+ career revenue, nine deals over $12M), now building and selling AI products that are in production with paying clients. Published in Nation's Restaurant News and LawFuel. Applied AI Competency Index 98/100 (Verified Architect).
 
 ## Products in production
 - [GotaGuy](https://gotaguy.chat): home repair by text; live in McKinney, TX and Aurora, CO
@@ -14,6 +14,7 @@
 
 ## Writing
 - [Why restaurants don't need an $11,000 consultant to fix prime cost anymore](https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore): Nation's Restaurant News, August 2026
+- [The Traffic Meter Can't See the Clients AI Never Sends You](https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/): LawFuel, September 2026
 - [The Kerzie Effect](https://kerzie.ai/kerzie-effect)
 - [The Consequence Clock](https://kerzie.ai/consequence-clock)
 - [The Blast Door](https://kerzie.ai/blast-door)
