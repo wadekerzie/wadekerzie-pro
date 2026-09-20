@@ -14,6 +14,10 @@ const currentlyItems = [
         label: "Published in Nation's Restaurant News, August 2026.",
     },
     {
+        icon: '📰',
+        label: 'Published in LawFuel, September 2026.',
+    },
+    {
         icon: '🚀',
         label: 'Shipping. Not teaching.',
     },
@@ -123,6 +127,14 @@ export default function LinkHub() {
                     title="Published Thinking"
                     description="Nation's Restaurant News byline, plus The Kerzie Effect, The Consequence Clock and The Blast Door at kerzie.ai."
                     href="https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore"
+                />
+
+                {/* LawFuel byline */}
+                <LinkCard
+                    emoji="📰"
+                    title="LawFuel Byline"
+                    description="The Traffic Meter Can't See the Clients AI Never Sends You, September 2026."
+                    href="https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/"
                 />
 
                 {links.slice(1).map((link) => (
