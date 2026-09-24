@@ -135,7 +135,7 @@ export default function LinkHub() {
                     emoji="✍️"
                     title="Essays"
                     description="The Kerzie Effect, The Consequence Clock and The Blast Door, at kerzie.ai."
-                    href="https://kerzie.ai/kerzie-effect"
+                    href="https://kerzie.ai/essays"
                 />
 
                 {links.slice(1).map((link) => (
