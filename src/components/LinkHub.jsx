@@ -130,6 +130,14 @@ export default function LinkHub() {
 
                 {/* Bylines live as links in the Currently box (Wade 9/24: the cards were redundant). */}
 
+                {/* Essays (Wade 9/24): the three kerzie.ai essays, starting with the first */}
+                <LinkCard
+                    emoji="✍️"
+                    title="Essays"
+                    description="The Kerzie Effect, The Consequence Clock and The Blast Door, at kerzie.ai."
+                    href="https://kerzie.ai/kerzie-effect"
+                />
+
                 {links.slice(1).map((link) => (
                     <LinkCard key={link.title} {...link} />
                 ))}
