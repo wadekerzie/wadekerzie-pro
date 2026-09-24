@@ -18,6 +18,10 @@ const currentlyItems = [
         label: 'Published in LawFuel, September 2026.',
     },
     {
+        icon: '📰',
+        label: 'Published in Small Business Currents, September 2026.',
+    },
+    {
         icon: '🚀',
         label: 'Shipping. Not teaching.',
     },
@@ -135,6 +139,14 @@ export default function LinkHub() {
                     title="LawFuel Byline"
                     description="The Traffic Meter Can't See the Clients AI Never Sends You, September 2026."
                     href="https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/"
+                />
+
+                {/* Small Business Currents byline */}
+                <LinkCard
+                    emoji="📰"
+                    title="Small Business Currents Byline"
+                    description="Build On What Won't Change, September 2026."
+                    href="https://smallbusinesscurrents.com/2026/09/22/build-on-what-wont-change/"
                 />
 
                 {links.slice(1).map((link) => (
