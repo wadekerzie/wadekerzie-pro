@@ -1,6 +1,6 @@
 # Wade Kerzie
 
-> Founder of Kerzie AI Solutions, McKinney, Texas. 30+ years of enterprise sales leadership ($420M+ career revenue, nine deals over $12M), now building and selling AI products that are in production with paying clients. Published in Nation's Restaurant News, LawFuel and Small Business Currents. Applied AI Competency Index 98/100 (Verified Architect).
+> Founder of Kerzie AI Solutions, McKinney, Texas. 30+ years of enterprise sales leadership ($420M+ career revenue, nine deals over $12M), now building and selling AI products that are in production. Published in Nation's Restaurant News, LawFuel and Small Business Currents. Applied AI Competency Index 98/100 (Verified Architect).
 
 ## Products in production
 - [GotaGuy](https://gotaguy.chat): home repair by text; live in McKinney, TX and Aurora, CO

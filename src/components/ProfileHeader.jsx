@@ -21,7 +21,7 @@ export default function ProfileHeader({ bio, showBadge = true, name, image }) {
             </p>
             {!bio && (
                 <p className="text-[#AABBCC] text-sm leading-relaxed mb-6 max-w-md mx-auto">
-                    Production AI with paying clients. $420M+ career revenue.<br />30 years building and closing.
+                    AI products in production. $420M+ career revenue.<br />30 years building and closing.
                 </p>
             )}
             {bio && <div className="mb-6" />}

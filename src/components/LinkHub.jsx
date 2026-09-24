@@ -7,23 +7,26 @@ import CalendarModal from './CalendarModal'
 const currentlyItems = [
     {
         icon: '🏢',
-        label: 'Founder, Kerzie AI Solutions. Four AI products in production, paying clients.',
+        label: 'Founder, Kerzie AI Solutions. Four AI products in production.',
     },
     {
         icon: '📰',
         label: "Published in Nation's Restaurant News, August 2026.",
+        link: 'https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore',
     },
     {
         icon: '📰',
         label: 'Published in LawFuel, September 2026.',
+        link: 'https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/',
     },
     {
         icon: '📰',
         label: 'Published in Small Business Currents, September 2026.',
+        link: 'https://smallbusinesscurrents.com/2026/09/22/build-on-what-wont-change/',
     },
     {
         icon: '🚀',
-        label: 'Shipping. Not teaching.',
+        label: 'Shipping real solutions.',
     },
 ]
 
@@ -92,7 +95,7 @@ export default function LinkHub() {
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-xs text-[#AABBCC] leading-relaxed hover:text-accent transition-colors"
+                                    className="text-xs text-[#AABBCC] leading-relaxed underline decoration-accent/40 underline-offset-2 hover:text-accent transition-colors"
                                 >
                                     {item.label}
                                 </a>
