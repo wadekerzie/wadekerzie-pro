@@ -64,8 +64,8 @@ const links = [
     {
         emoji: '📧',
         title: 'Newsletter',
-        description: 'Twice a week on AI, operations, and building. Tuesday and Thursday.',
-        href: 'https://wades-newsletter-9cf259.beehiiv.com/',
+        description: 'Weekly on AI, operations, and building. Tuesdays, on Substack.',
+        href: 'https://news.kerzie.ai/',
     },
     {
         emoji: '⛳',
@@ -128,29 +128,7 @@ export default function LinkHub() {
                     <PodcastCard />
                 </div>
 
-                {/* Published Thinking */}
-                <LinkCard
-                    emoji="📰"
-                    title="Published Thinking"
-                    description="Nation's Restaurant News byline, plus The Kerzie Effect, The Consequence Clock and The Blast Door at kerzie.ai."
-                    href="https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore"
-                />
-
-                {/* LawFuel byline */}
-                <LinkCard
-                    emoji="📰"
-                    title="LawFuel Byline"
-                    description="The Traffic Meter Can't See the Clients AI Never Sends You, September 2026."
-                    href="https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/"
-                />
-
-                {/* Small Business Currents byline */}
-                <LinkCard
-                    emoji="📰"
-                    title="Small Business Currents Byline"
-                    description="Build On What Won't Change, September 2026."
-                    href="https://smallbusinesscurrents.com/2026/09/22/build-on-what-wont-change/"
-                />
+                {/* Bylines live as links in the Currently box (Wade 9/24: the cards were redundant). */}
 
                 {links.slice(1).map((link) => (
                     <LinkCard key={link.title} {...link} />
