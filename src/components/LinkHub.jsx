@@ -25,6 +25,16 @@ const currentlyItems = [
         link: 'https://smallbusinesscurrents.com/2026/09/22/build-on-what-wont-change/',
     },
     {
+        icon: '📰',
+        label: 'Published in Plumbing & Mechanical, September 2026.',
+        link: 'https://www.pmmag.com/articles/107780-how-contractors-can-use-ai-to-avoid-a-9-500-consulting-bill',
+    },
+    {
+        icon: '📰',
+        label: 'Published in Supply House Times, September 2026.',
+        link: 'https://www.supplyht.com/articles/107487-how-ai-can-help-trade-contractors-replace-a-9-500-consulting-playbook',
+    },
+    {
         icon: '🚀',
         label: 'Shipping real solutions.',
     },
