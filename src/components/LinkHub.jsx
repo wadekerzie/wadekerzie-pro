@@ -35,6 +35,11 @@ const currentlyItems = [
         link: 'https://www.supplyht.com/articles/107487-how-ai-can-help-trade-contractors-replace-a-9-500-consulting-playbook',
     },
     {
+        icon: '🎙️',
+        label: 'Guest on The Dealer Playbook podcast, October 2026.',
+        link: 'https://thedealerplaybook.com/episodes/why-ai-is-skipping-your-dealership-website-wade-kerzie',
+    },
+    {
         icon: '🚀',
         label: 'Shipping real solutions.',
     },

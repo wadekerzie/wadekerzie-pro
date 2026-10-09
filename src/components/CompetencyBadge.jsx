@@ -43,7 +43,7 @@ const scoringPillars = [
         details: [
             { label: 'Verified deployment', value: 'Applied AI systems deployed in production across multiple verticals.' },
             { label: 'Published', value: "Nation's Restaurant News, August 2026; LawFuel, September 2026; Small Business Currents, September 2026; Plumbing & Mechanical and Supply House Times, September 2026; essays The Kerzie Effect, The Consequence Clock and The Blast Door at kerzie.ai" },
-            { label: 'On camera', value: 'AI in the Wild, the show on the Kerzie AI YouTube channel; 56-episode podcast archive' },
+            { label: 'On camera', value: 'AI in the Wild, the show on the Kerzie AI YouTube channel; 56-episode podcast archive; guest on The Dealer Playbook podcast, October 2026' },
         ],
     },
     {
