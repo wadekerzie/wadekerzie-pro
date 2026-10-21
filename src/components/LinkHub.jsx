@@ -45,6 +45,16 @@ const currentlyItems = [
     },
 ]
 
+// Essays (Wade 10/21): every kerzie.ai essay, newest first, each with Read / Listen / Watch.
+// Keep this current: a new essay, byline or aired podcast lands here in the same motion it ships.
+const essayItems = [
+    { title: 'The Shrapnel', date: 'October 9, 2026', slug: 'shrapnel' },
+    { title: 'The Blast Radius', date: 'October 1, 2026', slug: 'blast-radius' },
+    { title: 'The Blast Door', date: 'July 31, 2026', slug: 'blast-door' },
+    { title: 'The Consequence Clock', date: 'July 30, 2026', slug: 'consequence-clock' },
+    { title: 'The Kerzie Effect', date: 'July 24, 2026', slug: 'kerzie-effect' },
+]
+
 const productItems = [
     {
         title: 'GotaGuy',
@@ -145,13 +155,33 @@ export default function LinkHub() {
 
                 {/* Bylines live as links in the Currently box (Wade 9/24: the cards were redundant). */}
 
-                {/* Essays (Wade 9/24): the three kerzie.ai essays, starting with the first */}
-                <LinkCard
-                    emoji="✍️"
-                    title="Essays"
-                    description="The Kerzie Effect, The Consequence Clock and The Blast Door, at kerzie.ai."
-                    href="https://kerzie.ai/essays"
-                />
+                {/* Essays (Wade 10/21): each essay with Read / Listen / Watch */}
+                <section className="max-w-md mx-auto" aria-label="Essays">
+                    <div className="bg-[#1E2035] border border-border rounded-2xl p-4 shadow-card">
+                        <div className="flex items-center gap-2.5 mb-3">
+                            <span className="text-xl" role="img" aria-hidden="true">✍️</span>
+                            <a href="https://kerzie.ai/essays" target="_blank" rel="noopener noreferrer" className="font-medium text-sm text-white hover:text-[#6B9FD4] transition-colors">
+                                Essays
+                            </a>
+                            <span className="text-xs text-[#AABBCC]">Read, listen or watch</span>
+                        </div>
+                        <ul className="space-y-2.5">
+                            {essayItems.map((e) => (
+                                <li key={e.slug} className="flex items-baseline justify-between gap-3">
+                                    <div className="min-w-0">
+                                        <p className="text-xs text-white leading-snug">{e.title}</p>
+                                        <p className="text-[11px] text-[#8899AA]">{e.date}</p>
+                                    </div>
+                                    <div className="flex gap-2.5 shrink-0 text-xs">
+                                        <a href={`https://kerzie.ai/${e.slug}`} target="_blank" rel="noopener noreferrer" className="text-[#AABBCC] underline decoration-accent/40 underline-offset-2 hover:text-accent transition-colors">Read</a>
+                                        <a href={`https://kerzie.ai/${e.slug}#listen`} target="_blank" rel="noopener noreferrer" className="text-[#AABBCC] underline decoration-accent/40 underline-offset-2 hover:text-accent transition-colors">Listen</a>
+                                        <a href={`https://kerzie.ai/${e.slug}#watch`} target="_blank" rel="noopener noreferrer" className="text-[#AABBCC] underline decoration-accent/40 underline-offset-2 hover:text-accent transition-colors">Watch</a>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
 
                 {links.slice(1).map((link) => (
                     <LinkCard key={link.title} {...link} />
